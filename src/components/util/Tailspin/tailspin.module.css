@@ -1,0 +1,19 @@
+.div {
+  animation: 0.8s linear infinite spin;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-radius: 50%;
+  height: 22px;
+  width: 22px;
+  box-sizing: border-box;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(-360deg);
+  }
+
+  to {
+    transform: rotate(0);
+  }
+}

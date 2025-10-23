@@ -1,0 +1,15 @@
+.container {
+  height: 100vh;
+  background-color: #39241d;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.navmain {
+  height: calc(100vh - 50px);
+  display: flex;
+}
+
+.main {
+  background-color: #2c211a;
+}
