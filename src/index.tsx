@@ -1,28 +1,30 @@
 /* @refresh reload */
 import { render } from "solid-js/web"
 import "solid-devtools"
-import { Router, Route } from "@solidjs/router"
+import { Router } from "@solidjs/router"
 import "./index.css"
 import App from "./App"
 import { lazy } from "solid-js"
 
 const root = document.getElementById("root")
 
-const Login = lazy(() => import("./components/auth/Login/LoginPage"))
+const LoginPage = lazy(() => import("./components/auth/Login/LoginPage"))
 const HomePage = lazy(() => import("./components/home/HomePage"))
 const NotFound = lazy(() => import("./components/notfound/NotFound"))
-const Register = lazy(() => import("./components/auth/Register/RegisterPage"))
+const RegisterPage = lazy(
+  () => import("./components/auth/Register/RegisterPage")
+)
 const BookingsPage = lazy(() => import("./components/bookings/BookingsPage"))
 const Booking = lazy(() => import("./components/bookings/[bookingId]"))
 
-const routes = [
+export const routes = [
   {
     path: "/auth/login",
-    component: Login,
+    component: LoginPage,
   },
   {
     path: "/auth/register",
-    component: Register,
+    component: RegisterPage,
   },
   {
     path: "/",

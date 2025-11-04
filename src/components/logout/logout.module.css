@@ -1,0 +1,52 @@
+.container {
+  color: rgb(188, 179, 179);
+  cursor: pointer;
+  position: relative;
+}
+
+.svg {
+  width: 36px;
+}
+
+.menu {
+  position: absolute;
+  left: -194px;
+  width: 240px;
+  top: 50px;
+  user-select: none;
+  align-items: center;
+  background-color: #39241d;
+  font-size: 14px;
+  border-radius: 14px;
+}
+
+.menu-svg {
+  width: 20px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  gap: 10px;
+  cursor: pointer;
+  border: 1px solid hsl(348, 20%, 24%);
+  padding: 26px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.menu-item:first-child {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.menu-item:last-child {
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.menu-item:hover {
+  color: orange;
+  transition: 500ms;
+}

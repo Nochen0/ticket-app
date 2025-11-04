@@ -1,0 +1,105 @@
+.container {
+  padding: 20px;
+}
+
+.h2 {
+  color: white;
+  font-weight: 600;
+}
+
+.bookings {
+  background-color: #39241d;
+  border-radius: 16px;
+  padding: 28px;
+}
+
+.h3 {
+  color: white;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+.bookings-control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.filter-sort {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(192 174 174);
+  flex-wrap: wrap;
+}
+
+.sort {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.other-filters {
+  background-color: #391d1d;
+  border: 1px solid #603d3d;
+  border-radius: 5px;
+  color: inherit;
+  font-size: 15px;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.button {
+  color: white;
+  background-color: #d96e34;
+  border-radius: 16px;
+  border-color: transparent;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 3px 6px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #b25d2f;
+}
+
+.search {
+  background-color: #4a3136;
+  border: none;
+  border-radius: 3px;
+  padding: 12px;
+  padding-right: 0px;
+  font-size: 15px;
+  max-width: 180px;
+  color: white;
+}
+
+.search::placeholder {
+  color: rgb(192 174 174);
+}
+
+.svg {
+  width: 42px;
+  background-color: #391d1d;
+  border: 1px solid #603d3d;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.search:focus {
+  outline: 1px solid orange;
+}
+
+.other-filters:focus {
+  outline: 1px solid orange;
+}

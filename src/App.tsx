@@ -1,8 +1,13 @@
 import { type ParentComponent } from "solid-js"
-import Authenticate from "./components/util/Authenticate"
+import AuthProvider from "./context/AuthProvider"
+import LayoutTest from "./components/layout/Layout"
 
 const App: ParentComponent = (props) => {
-  return <Authenticate>{props.children}</Authenticate>
+  return (
+    <AuthProvider>
+      <LayoutTest>{props.children}</LayoutTest>
+    </AuthProvider>
+  )
 }
 
 export default App

@@ -1,5 +1,5 @@
 .header {
-  height: 45px;
+  height: 67px;
   display: flex;
   padding: 10px 30px;
   justify-content: space-between;
@@ -14,4 +14,5 @@
   display: block;
   position: relative;
   left: 10px;
+  user-select: none;
 }
